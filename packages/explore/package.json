@@ -1,0 +1,29 @@
+{
+  "name": "explore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "check-types": "tsc --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "next": "^13.4.1",
+    "ui": "workspace:*"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "workspace:*",
+    "postcss": "^8.4.20",
+    "tailwind-theme": "workspace:*",
+    "tsconfig": "workspace:*",
+    "tsup": "^6.1.3"
+  }
+}

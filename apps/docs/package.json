@@ -5,14 +5,15 @@
   "scripts": {
     "dev": "next dev --port 3001",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3001",
     "lint": "next lint"
   },
   "dependencies": {
     "next": "^13.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "workspace:*"
+    "ui": "workspace:*",
+    "gmdp-data-provider": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^18.11.17",
@@ -21,8 +22,7 @@
     "autoprefixer": "^10.4.13",
     "eslint-config-custom": "workspace:*",
     "postcss": "^8.4.20",
-    "tailwind-config": "workspace:*",
-    "tailwindcss": "^3.2.4",
+    "tailwind-theme": "workspace:*",
     "tsconfig": "workspace:*",
     "typescript": "^4.9.4"
   }

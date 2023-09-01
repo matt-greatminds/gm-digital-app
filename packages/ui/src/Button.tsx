@@ -1,16 +1,24 @@
+import Link from "next/link";
 import * as React from "react";
 
-export const Button = () => {
-  return (
-    <div className="rounded-md ">
-      <a href="https://turbo.build/repo/docs">
-        <div className="ui-flex ui-w-full ui-items-center ui-justify-center ui-rounded-md ui-border ui-border-transparent ui-px-8 ui-py-3 ui-text-base ui-font-medium ui-no-underline ui-bg-white ui-text-black hover:ui-bg-gray-300 md:ui-py-3 md:ui-px-10 md:ui-text-lg md:ui-leading-6">
-          Read the docs
-          <span className="ui-ml-2 ui-bg-gradient-to-r ui-from-brandred ui-to-brandblue ui-bg-clip-text ui-text-transparent">
-            →
-          </span>
-        </div>
+interface ButtonProps extends React.PropsWithChildren {
+  href: string;
+  anchor?: boolean | undefined;
+}
+export const Button = (props: ButtonProps) => {
+  const styles =
+    "ui-inline-block ui-rounded ui-border ui-border-pr-170 ui-bg-pr-170 ui-px-12 ui-py-3 ui-text-sm ui-font-medium ui-text-n-white hover:ui-bg-transparent hover:ui-text-pr-170 focus:ui-outline-none focus:ui-ring active:ui-text-pr-120";
+  if (props.anchor) {
+    return (
+      <a className={styles} href={props.href}>
+        {props.children}
       </a>
-    </div>
+    );
+  }
+
+  return (
+    <Link className={styles} href={props.href}>
+      {props.children}
+    </Link>
   );
 };

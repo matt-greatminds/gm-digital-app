@@ -1,0 +1,10 @@
+{
+  "name": "tailwind-theme",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "baseThemeTailwindcss.js",
+    "baseThemeTailwindcss.mts"
+  ],
+  "devDependencies": {}
+}

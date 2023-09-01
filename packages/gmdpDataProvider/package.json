@@ -1,0 +1,16 @@
+{
+  "name": "gmdp-data-provider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.tsx",
+  "types": "src/index.tsx",
+  "files": [
+    "*.tsx"
+  ],
+  "devDependencies": {
+    "tsconfig": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": ">=16.x <=latest"
+  }
+}
