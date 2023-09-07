@@ -13,7 +13,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-beige-80">
       <body>
-        <NavBar />
+        <NavBar app="main" />
         <PageContainer>
           <GMDPDataProvider>{children}</GMDPDataProvider>
         </PageContainer>

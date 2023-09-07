@@ -1,26 +1,22 @@
 /** @type {import('next').NextConfig} */
 const { NextFederationPlugin } = require("@module-federation/nextjs-mf");
 
-const remotes = (isServer) => {
-  const location = isServer ? "ssr" : "chunks";
-  return {
-    // specify remotes
-    games: `games@http://localhost:3003/_next/static/${location}/remoteEntry.js`,
-  };
-};
-
 const nextConfig = {
   transpilePackages: ["gmdp-data-provider"],
-  basePath: "/student",
+  // basePath: "/student",
   webpack(config, { isServer }) {
     config.plugins.push(
       new NextFederationPlugin({
-        name: "student",
+        name: "games",
         filename: "static/chunks/remoteEntry.js",
-        remotes: remotes(isServer),
         exposes: {
-          // Host app also can expose modules
+          // specify exposed pages and components
+          "./Games": "src/pages/index.tsx",
         },
+        shared: {},
+        // shared: require("./package.json").dependencies,
+        // specify shared dependencies
+        // read more in Shared Dependencies section
       })
     );
 

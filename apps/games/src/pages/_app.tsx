@@ -6,13 +6,13 @@ import { GMDPDataProvider } from "gmdp-data-provider";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <NavBar app="student" />
+    <div className="bg-em1-20">
+      <NavBar />
       <PageContainer>
         <GMDPDataProvider>
           <Component {...pageProps} />
         </GMDPDataProvider>
       </PageContainer>
-    </>
+    </div>
   );
 }
