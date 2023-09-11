@@ -77,8 +77,11 @@ importers:
         specifier: workspace:*
         version: link:../../packages/tsconfig
 
-  apps/student:
+  apps/main-web:
     dependencies:
+      explore:
+        specifier: workspace:*
+        version: link:../../packages/explore
       gmdp-data-provider:
         specifier: workspace:*
         version: link:../../packages/gmdpDataProvider
@@ -96,11 +99,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/tsconfig
 
-  apps/web:
+  apps/student:
     dependencies:
-      explore:
-        specifier: workspace:*
-        version: link:../../packages/explore
       gmdp-data-provider:
         specifier: workspace:*
         version: link:../../packages/gmdpDataProvider

@@ -1,4 +1,4 @@
-const { DOCS_URL, STUDENT_URL } = process.env;
+const { STUDENT_URL } = process.env;
 const { NextFederationPlugin } = require("@module-federation/nextjs-mf");
 
 module.exports = {

@@ -6,7 +6,7 @@ export type NavBarProps = {
 };
 export const NavBar: FC<NavBarProps> = (props: NavBarProps) => {
   return (
-    <nav className="ui-relative ui-flex ui-flex-wrap ui-items-center ui-justify-between ui-px-2 ui-py-3 ui-bg-pr-base mb-3">
+    <nav className="ui-relative ui-flex ui-flex-wrap ui-items-center ui-justify-between ui-px-2 ui-py-3 ui-bg-pr-base ui-mb-3">
       <div className="ui-container ui-px-4 ui-mx-auto ui-flex ui-flex-wrap ui-items-center ui-justify-between">
         <div className="ui-w-full ui-relative ui-flex ui-justify-between lg:ui-w-auto  ui-px-4 ui-lg:static ui-lg:block lg:ui-justify-start">
           {props.app === "main" ? (

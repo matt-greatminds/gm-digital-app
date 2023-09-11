@@ -1,6 +1,8 @@
 import { Button } from "ui";
+import { useGmdpData } from "gmdp-data-provider";
 
 export default function Home() {
+  const GmdpData = useGmdpData();
   return (
     <div>
       <h1 className="mx-auto mb-12 text-center text-6xl font-extrabold tracking-tight text-white sm:text-7xl lg:text-8xl xl:text-8xl">
@@ -19,6 +21,10 @@ export default function Home() {
           to see it in action.
         </a>
       </p>
+      <div className="my-10">
+        <p className="font-medium">Shared data:</p>{" "}
+        <div className="my-3">{JSON.stringify(GmdpData)}</div>{" "}
+      </div>
       <div className="mx-auto mt-5 max-w-xl sm:flex sm:justify-center md:mt-8">
         <Button href="/student/games" anchor>
           Check out Student Games
