@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { DisplaySharedData } from "../components/displaySharedData";
 
 export const metadata: Metadata = {
   title: "GM - Main App",
@@ -14,6 +15,7 @@ export default function Home() {
         {" "}
         This is the main landing page for Great Minds
       </p>
+      <DisplaySharedData />
     </div>
   );
 }

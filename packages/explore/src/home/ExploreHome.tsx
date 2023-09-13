@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "ui";
+import { Counter } from "../components/Counter";
 
 export const ExploreHome = () => {
   return (
@@ -14,6 +15,9 @@ export const ExploreHome = () => {
       </p>
       <div className="flex justify-center">
         <Button href="/explore/details">Go To Details</Button>
+      </div>
+      <div>
+        <Counter />
       </div>
     </div>
   );

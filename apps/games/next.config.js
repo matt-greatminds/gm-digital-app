@@ -3,7 +3,7 @@ const { NextFederationPlugin } = require("@module-federation/nextjs-mf");
 
 const nextConfig = {
   transpilePackages: ["gmdp-data-provider"],
-  // basePath: "/student",
+  // basePath: "/games",
   webpack(config, { isServer }) {
     config.plugins.push(
       new NextFederationPlugin({
@@ -14,7 +14,9 @@ const nextConfig = {
           "./Games": "src/pages/index.tsx",
         },
         // shared: {},
-        shared: require("../../package.json").dependencies,
+        shared: {
+          ...require("../../package.json").dependencies,
+        },
         // specify shared dependencies
         // read more in Shared Dependencies section
       })

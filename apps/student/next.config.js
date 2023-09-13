@@ -18,6 +18,9 @@ const nextConfig = {
         name: "student",
         filename: "static/chunks/remoteEntry.js",
         remotes: remotes(isServer),
+        shared: {
+          ...require("../../package.json").dependencies,
+        },
         exposes: {
           // Host app also can expose modules
         },

@@ -15,4 +15,10 @@ App router
 
 - nextjs 13 introduced the new app router and claims it's stable but the react ecosystem is not
   caught up. Many packages and features aren't capatible with app router.
--
+- "use client" is removed from builds. The below tsup setting will keep the `"use client"` banner, imports can still cause bizarre errors
+  ```json
+  banner: {
+    js: `"use client"`,
+  },
+  // treeshake: true,
+  ```
