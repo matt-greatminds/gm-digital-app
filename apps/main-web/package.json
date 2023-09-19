@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "explore": "workspace:*",
-    "ui": "workspace:*",
+    "ui": "workspace:1.0.0",
     "gmdp-data-provider": "workspace:*"
   },
   "devDependencies": {
