@@ -8,23 +8,24 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@types/node": "^18.11.17",
-    "@types/react": "^18.2.5",
-    "@types/react-dom": "^18.2.4",
-    "eslint": "^7.32.0",
+    "@types/node": "^18.18.3",
+    "@types/react": "^18.2.24",
+    "@types/react-dom": "^18.2.9",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.50.0",
     "eslint-config-custom": "workspace:*",
-    "prettier": "^2.7.1",
-    "prettier-plugin-tailwindcss": "^0.1.11",
-    "tailwindcss": "^3.2.4",
-    "postcss": "8.4.29",
-    "autoprefixer": "^10.4.13",
+    "postcss": "8.4.31",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.5",
+    "tailwindcss": "^3.3.3",
     "turbo": "latest",
-    "typescript": "^4.9.4"
+    "typescript": "^5.2.2"
   },
   "packageManager": "pnpm@8.6.10",
   "dependencies": {
     "@module-federation/nextjs-mf": "^7.0.8",
-    "next": "^13.4.1",
+    "critters": "^0.0.20",
+    "next": "^13.5.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
