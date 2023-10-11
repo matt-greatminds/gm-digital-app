@@ -5,6 +5,8 @@
     "dev": "turbo dev  --concurrency 11",
     "lint": "turbo lint",
     "clean": "turbo clean",
+    "help": "turbo run --help",
+    "build:graph": "turbo run build --graph [./graph.jpg]",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
