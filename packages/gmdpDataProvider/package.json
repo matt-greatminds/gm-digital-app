@@ -9,6 +9,7 @@
     "*.tsx"
   ],
   "devDependencies": {
+    "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*"
   },
   "peerDependencies": {

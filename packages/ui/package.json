@@ -32,6 +32,7 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "check-types": "tsc --noEmit",
+    "lint": "npx eslint ./src/**",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
