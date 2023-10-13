@@ -1,6 +1,6 @@
 {
   "name": "explore",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "private": true,
@@ -18,7 +18,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "next": "^13.4.1",
-    "ui": "workspace:1.0.0",
+    "ui": "workspace:2.0.0",
     "gmdp-data-provider": "workspace:*"
   },
   "devDependencies": {

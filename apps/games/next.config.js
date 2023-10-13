@@ -13,12 +13,9 @@ const nextConfig = {
           // specify exposed pages and components
           "./Games": "src/pages/index.tsx",
         },
-        // shared: {},
         shared: {
           ...require("../../package.json").dependencies,
         },
-        // specify shared dependencies
-        // read more in Shared Dependencies section
       })
     );
 

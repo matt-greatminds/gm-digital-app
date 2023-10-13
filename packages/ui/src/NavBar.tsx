@@ -14,14 +14,14 @@ export const NavBar: FC<NavBarProps> = (props: NavBarProps) => {
               className="ui-text-small ui-font-bold ui-leading-relaxed ui-inline-block ui-mr-4 ui-py-2 ui-whitespace-nowrap ui-uppercase ui-text-n-white"
               href="/"
             >
-              Great Minds
+              Great Minds PBC
             </Link>
           ) : (
             <a
               className="ui-text-small ui-font-bold ui-leading-relaxed ui-inline-block ui-mr-4 ui-py-2 ui-whitespace-nowrap ui-uppercase ui-text-n-white"
               href="/"
             >
-              Great Minds
+              Great Minds PBC
             </a>
           )}
           <button
